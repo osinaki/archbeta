@@ -10,6 +10,6 @@ app.get("/", (req, res) => {
   res.render("landing");
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(`Server started and listening on port ${port}.`);
 });
