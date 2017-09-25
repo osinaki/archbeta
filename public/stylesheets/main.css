@@ -69,3 +69,9 @@ body {
 .imgbox img{
   width: 100%;
 }
+
+.contact-form {
+  min-width: 340px;
+  width: 40%;
+  margin: auto;
+}
