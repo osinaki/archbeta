@@ -1,0 +1,67 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  /*background-color: #dadea1;*/
+  background-color: #fff;
+}
+
+.headertext {
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #dadea1;
+}
+
+.jumbotron {
+  padding: 0;
+  margin: 0;
+  background-color: #dadea1;
+}
+
+.carousel img {
+  height: 300px;
+  max-height: 300px;
+  width: auto;
+  margin: auto;
+}
+
+.color1 {
+  background-color: #546089;
+  margin: 0;
+  padding: 0;
+}
+
+.color2 {
+  background-color: #dadea1;
+}
+
+.color3 {
+  background-color: #7c7946;
+}
+
+.color1light {
+  background-color: rgba(84, 96, 137, 0.5);
+}
+
+.color2light {
+  background-color: rgba(218, 222, 161, 0.5);
+}
+
+.color3light {
+  background-color: rgba(124, 121, 70, 0.5);
+}
+
+.highlightbox {
+  padding: 12px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.checklist {
+  list-style: none;
+  font-weight: bold;
+}
+
+.hudlink {
+  height: 100px;
+  margin: 5px;
+}
