@@ -19,8 +19,8 @@ body {
 }
 
 .carousel img {
-  height: 300px;
-  max-height: 300px;
+  height: 250px;
+  max-height: 250px;
   width: auto;
   margin: auto;
 }
