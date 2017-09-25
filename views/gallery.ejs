@@ -1,0 +1,42 @@
+<% include ./partials/header %>
+<div class="container-fluid">
+  <div class="row">
+    <h1>Gallery</h1>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="img/20151016_073753_Richtone(HDR).jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="/img/20151021_121724.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="/img/20151022_081220.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="/img/20160714_081511.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="/img/20160715_084845.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="/img/20160715_090230.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="/img/20160715_090530.jpg"></a></div>
+      <div class="col-lg-3 col-sm-4 col-xs-6"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="/img/20151022_081155.jpg"></a></div>
+  </div>
+</div>
+<div tabindex="-1" class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+		<button class="close" type="button" data-dismiss="modal">×</button>
+		<!-- <h3 class="modal-title">Heading</h3> -->
+	</div>
+	<div class="modal-body">
+
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-default" data-dismiss="modal">Close</button>
+	</div>
+   </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function() {
+  $('.thumbnail').click(function(){
+      $('.modal-body').empty();
+    var title = $(this).parent('a').attr("title");
+    $('.modal-title').html(title);
+    $($(this).parents('div').html()).appendTo('.modal-body');
+    $('#myModal').modal({show:true});
+  });
+  });
+</script>
+<% include ./partials/footer %>
