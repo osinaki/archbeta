@@ -48,7 +48,7 @@ app.post("/contact", (req, res) => {
 
   let HelperOptions = {
     from: req.body.email,
-    to: 'david.a.neal@hotmail.com',
+    to: 'david.a.neal@hotmail.com, archbeta@outlook.com',
     subject: 'Contact Form Request from ' + req.body.email,
     text: req.body.comment
   };
