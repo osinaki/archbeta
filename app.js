@@ -2,15 +2,15 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
-var cloudinary = require("cloudinary");
+// var cloudinary = require("cloudinary");
 
 const port = process.env.PORT || 3000;
 
-cloudinary.config({
-  cloud_name: 'rumplefumpf',
-  api_key: '112955419389682',
-  api_secret: 'zx2SjxzdgKLuL1s0Y-_5-BkQYOU' 
-});
+// cloudinary.config({
+//   cloud_name: 'rumplefumpf',
+//   api_key: '112955419389682',
+//   api_secret: 'zx2SjxzdgKLuL1s0Y-_5-BkQYOU'
+// });
 
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
