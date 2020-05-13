@@ -1,3 +1,4 @@
+{
   "name": "archbeta",
   "version": "1.0.0",
   "description": "Website for ARCH Beta apartments.",
@@ -16,4 +17,5 @@
     "nodemailer": "^4.1.2",
     "mongoose": ">=5.7.5",
     "lodash": ">=4.17.12"
+}
 }
